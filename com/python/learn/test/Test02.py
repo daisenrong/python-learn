@@ -1,3 +1,5 @@
+import time
+
 a = 1
 b = 1.1
 c = True
@@ -24,3 +26,7 @@ for i in list:
 file = open("/Users/daisenrong/Desktop/1.txt")
 str = file.readline()
 print(str)
+
+
+# 格式化成2016-03-20 11:45:39形式
+print (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))

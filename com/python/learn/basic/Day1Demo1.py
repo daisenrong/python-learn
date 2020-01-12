@@ -2,6 +2,10 @@ import keyword
 
 
 def demo1():
+    '''
+    方法描述：。。。。
+    :return:
+    '''
     # 关键字
 
     print(keyword.kwlist)
