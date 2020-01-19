@@ -1,9 +1,13 @@
-def printStr(str):
-    # 这里写你的逻辑  将字符串拆分成字母，然后大小写互换打印
-    for i in str:
-        print(i.swapcase())
+def sumCount(str):
+    result = {}
+    s = ""
+    for i in str.split(" "):
+        if i in result:
+            result[i] = result[i] + 1
+        else:
+            result[i] = 1
+    return result
 
-n = input("请输入字符串：")
 
-printStr(n)
-
+s = sumCount("New to Python or choosing between Python 2 and Python 3? Read Python 2 or Python 3.")
+print(s)
